@@ -2,6 +2,11 @@
       <h1> <img src="https://www.svgrepo.com/show/139/traffic-light.svg" width="80px"><br/>Traffic Monitoring System</h1>
      </div>
 
+![Screenshot 2024-11-15 152054](https://github.com/user-attachments/assets/2dd8404f-e401-4117-b664-26317e87e46f)
+![Screenshot 2024-11-15 152107](https://github.com/user-attachments/assets/5234e559-11eb-41b7-9cc8-4fca91c1da54)
+![Screenshot 2024-11-15 152117](https://github.com/user-attachments/assets/a356c179-be3a-4980-8f78-b00671f7ec25)
+
+
 
 # Description
 The Emergency Vehicle Traffic Management System is a web application designed to revolutionize how emergency vehicles navigate through traffic. By implementing real-time traffic monitoring and automated signal control, the system significantly reduces emergency response times and enhances road safety for all users.
