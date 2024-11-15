@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Vehicle Traffic Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{{ url_for('index') }}" class="text-2xl font-bold">Traffic Management System</a>
+            <div class="flex space-x-4">
+                <a href="{{ url_for('traffic_management') }}" class="hover:underline">Traffic Management</a>
+                <a href="{{ url_for('emergency_contact') }}" class="hover:underline">Emergency Contact</a>
+                <a href="{{ url_for('contact') }}" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-6">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

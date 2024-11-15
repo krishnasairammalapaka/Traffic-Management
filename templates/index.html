@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Project Title and Introduction -->
+<div class="text-center mt-10">
+    <h1 class="text-4xl font-bold mb-4">Emergency Vehicle Traffic Management System</h1>
+    <p class="text-lg">A project aimed at enhancing traffic management for emergency vehicles to ensure safe and efficient road usage.</p>
+</div>
+
+<!-- Project Advertisement Section -->
+<div class="mt-10 bg-blue-100 p-8 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-semibold text-blue-600 mb-4 text-center">Why This Project?</h2>
+    <p class="text-center text-lg">
+        Our project provides a dynamic traffic control system prioritizing emergency vehicles. This system can help reduce delays for emergency responders, ensuring they reach their destination as quickly and safely as possible.
+    </p>
+    <p class="text-center text-lg mt-2">
+        Join us in supporting a safer, more efficient traffic system that could save lives!
+    </p>
+</div>
+
+<!-- Traffic Awareness Images -->
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow-lg p-4">
+        <img src="{{ url_for('static', filename='images/traffic_light.jpg') }}" alt="Traffic Light Awareness" class="w-full rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Respect the Traffic Lights</h3>
+        <p class="text-sm mt-2">Follow traffic signals to avoid accidents and ensure safe movement for all vehicles on the road.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-4">
+        <img src="{{ url_for('static', filename='images/seatbelt.jpg') }}" alt="Seatbelt Awareness" class="w-full rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Always Wear Seatbelts</h3>
+        <p class="text-sm mt-2">Seatbelts reduce the risk of severe injuries in case of an accident. Make it a habit for everyone in the car.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-lg p-4">
+        <img src="{{ url_for('static', filename='images/speed_limit.jpg') }}" alt="Speed Limit Awareness" class="w-full rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Follow Speed Limits</h3>
+        <p class="text-sm mt-2">Speeding is a major cause of accidents. Stick to the speed limits to ensure safety for yourself and others.</p>
+    </div>
+</div>
+
+<!-- Important Indian Traffic Rules -->
+<div class="mt-10 bg-gray-100 p-8 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-4 text-center">Important Traffic Rules in India</h2>
+    <p class="text-center text-lg mb-6">Be a responsible driver by knowing and following these crucial Indian traffic laws:</p>
+    
+    <ul class="space-y-4">
+        <li>
+            <strong>Rule 15 (Speed Limits):</strong> According to Section 112 of the Motor Vehicles Act, 1988, drivers must adhere to speed limits set for different areas and vehicle types. Exceeding speed limits can lead to fines or license suspension.
+        </li>
+        <li>
+            <strong>Rule 125 (Wearing Seat Belts):</strong> Rule 125 mandates seatbelt usage for all vehicle occupants. Non-compliance can lead to fines and poses serious safety risks.
+        </li>
+        <li>
+            <strong>Rule 129 (Helmet Mandate for Two-Wheelers):</strong> Section 129 of the Motor Vehicles Act, 1988 requires all riders of two-wheelers to wear helmets. Violations can incur fines and penalties.
+        </li>
+        <li>
+            <strong>Rule 177 (Violation of Traffic Signals):</strong> Failure to follow traffic signals is punishable under Section 177 of the Motor Vehicles Act, 1988, with penalties including fines and, for repeated offenses, license suspension.
+        </li>
+        <li>
+            <strong>Rule 194D (Use of Mobile Devices While Driving):</strong> Using mobile phones while driving is strictly prohibited. This rule aims to prevent distractions that lead to accidents.
+        </li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="text-3xl font-bold text-center mb-8">Emergency Contacts</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- New Delhi -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-4">New Delhi</h3>
+        <div class="flex items-center mb-2">
+            <img src="{{ url_for('static', filename='images/hospital_logo_newdelhi.jpg') }}" alt="Hospital Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">All India Institute of Medical Sciences (AIIMS)</p>
+                <p>Contact: +91 11 2658 8500</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="{{ url_for('static', filename='images/fire_logo_newdelhi.jpg') }}" alt="Fire Station Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">New Delhi Fire Services</p>
+                <p>Contact: 101</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mumbai -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-4">Mumbai</h3>
+        <div class="flex items-center mb-2">
+            <img src="{{ url_for('static', filename='images/hospital_logo_mumbai.jpg') }}" alt="Hospital Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">Bombay Hospital</p>
+                <p>Contact: +91 22 2206 7676</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="{{ url_for('static', filename='images/fire_logo_mumbai.jpg') }}" alt="Fire Station Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">Mumbai Fire Brigade</p>
+                <p>Contact: 101</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat similar sections for the other cities -->
+    <!-- Bangalore -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold mb-4">Bangalore</h3>
+        <div class="flex items-center mb-2">
+            <img src="{{ url_for('static', filename='images/hospital_logo_bangalore.jpg') }}" alt="Hospital Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">St. John's Medical College</p>
+                <p>Contact: +91 80 2206 5000</p>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="{{ url_for('static', filename='images/fire_logo_bangalore.jpg') }}" alt="Fire Station Logo" class="w-12 h-12 rounded-full mr-4">
+            <div>
+                <p class="font-semibold">Bangalore Fire Station</p>
+                <p>Contact: 101</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add entries for other cities: Chennai, Kolkata, Pune, Jaipur, Hyderabad, Ahmedabad, Goa -->
+</div>
+{% endblock %}
